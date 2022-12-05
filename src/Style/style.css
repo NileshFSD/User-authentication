@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&family=Bitter:wght@400;600&family=Comfortaa:wght@300&family=Domine&family=Press+Start+2P&family=Roboto:wght@100;400&family=Tiro+Bangla&family=Trispace:wght@800&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  background-color: rgb(240, 238, 253);
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(80, 2, 80);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  padding: 0.5rem;
+}
+
+.nav-menu {
+  width: 10rem;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(103, 26, 103);
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  opacity: 80%;
+  margin: 0.5rem 0rem;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 7px black;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+.link {
+  color: white;
+}
+
+.logo {
+  color: white;
+  position: absolute;
+  left: 1rem;
+}
+
+/* -------------------Sign-up & Login--------------- */
+.signup-container,
+.signin-container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form,
+.signin-form {
+  min-width: 18rem;
+  max-width: 20rem;
+  height: fit-content;
+  background-color: white;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 1rem;
+  margin: 2rem 2rem;
+  box-shadow: 0px 0px 10px purple;
+}
+
+.signup-btn,
+.save-btn {
+  width: 100%;
+}
+
+input,
+#address,
+select {
+  margin: 0.5rem 0rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  resize: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ------------user details----------------- */
+
+.user {
+  width: 100%;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px purple;
+  width: 90%;
+  height: fit-content;
+  padding: 2rem;
+}
+
+.log-out {
+  float: right;
+}
+
+.close {
+  color: red;
+  background-color: aqua;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ------------------------Userdata------------------ */
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.profile {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.userDetails {
+  width: 100%;
+}
+
+.profile-pic {
+  font-size: 7rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 5px 5px 10px purple;
+}
+
+.property {
+  width: 100%;
+  text-align: left;
+  padding: 0.1rem 0.3rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.value {
+  width: 100%;
+  padding: 0.3rem 0.3rem;
+  height: fit-content;
+}
+
+.edit-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit {
+  width: 100%;
+}
+/* ----------------------------Guest----------------------- */
+.guest-container {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.guest-profile {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: rgb(84, 2, 84);
+  color: white;
+}
+
+.guest-userDetails {
+  width: 100%;
+}
+
+.guest-profile-pic {
+  font-size: 7rem;
+  padding: 1rem;
+  color: purple;
+  background-color: white;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 5px 5px 10px white;
+}
+
+.guest-property {
+  width: 100%;
+  text-align: left;
+  padding: 0.1rem 0.3rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.guest-value {
+  width: 100%;
+  padding: 0.3rem 0.3rem;
+  height: fit-content;
+}
+
+@media only screen and (min-width: 760px) {
+  html {
+    font-size: 18px;
+  }
+
+  .admin-container {
+    flex-direction: row;
+    align-items: center;
+    height: 20rem;
+  }
+
+  .profile-pic {
+    font-size: 15rem;
+    border-radius: 8rem;
+  }
+  .edit {
+    max-width: 20rem !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1460px) {
+  html {
+    font-size: 24px;
+  }
+}
